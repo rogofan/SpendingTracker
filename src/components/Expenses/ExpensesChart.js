@@ -19,8 +19,6 @@ const ExpensesChart = (props) => {
   for (const expense of props.expenses) {
     // strating at 0 => january => 0
     const expenseMonth = expense.date.getMonth();
-    // console.log(
-    // `${expense.amount} bylo utraceno v měsíci ${expenseMonth} za ${expense.title}`);
 
     chartDataPoints[expenseMonth].value += expense.amount;
     // console.log(`${chartDataPoints[expenseMonth].value} ta druhá hodnota je ${expense.amount} a tamrtka součet je`);
